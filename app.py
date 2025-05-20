@@ -27,7 +27,7 @@ if 'requests' not in st.session_state:
     st.session_state['requests'] = []
 
 # Initialize the language model
-llm=ChatGroq(groq_api_key=api_key1,model_name="llama-3.1-70b-versatile",temperature=0.6)
+llm=ChatGroq(groq_api_key=api_key1,model_name="llama-3.3-70b-versatile",temperature=0.6)
 
 # Initialize conversation memory
 if 'buffer_memory' not in st.session_state:
